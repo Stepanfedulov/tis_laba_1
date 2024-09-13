@@ -14,8 +14,7 @@ function App() {
     setInputValue3(e.target.value);
   };
   const addItem = () => {
-    setItems([...items, `${inputValue1} ${inputValue2} ${inputValue3}`]);
-    setInputValue1('');
+    setItems([...items, `${inputValue1} ${inputValue2} ${inputValue3}`]);setInputValue1('');
     setInputValue2('');
     setInputValue3('');
   };
@@ -47,6 +46,4 @@ function App() {
       />
       <button onClick={addItem}>Добавить элемент</button>
     </div>
-  );
-}
-export default App;
+  );}export default App;
